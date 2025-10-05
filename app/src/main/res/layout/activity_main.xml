@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.roomshelves3d.ui.RoomGLSurfaceView
+        android:id="@+id/glView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_gravity="bottom">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Add"
+            android:src="@android:drawable/ic_input_add" />
+        <Space android:layout_width="12dp" android:layout_height="1dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Move"
+            android:src="@android:drawable/ic_menu_sort_by_size" />
+        <Space android:layout_width="12dp" android:layout_height="1dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnPan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Pan"
+            android:src="@android:drawable/ic_menu_crop" />
+        <Space android:layout_width="12dp" android:layout_height="1dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Reset"
+            android:src="@android:drawable/ic_menu_revert" />
+        <Space android:layout_width="16dp" android:layout_height="1dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Save"
+            android:src="@android:drawable/ic_menu_save" />
+        <Space android:layout_width="12dp" android:layout_height="1dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Load"
+            android:src="@android:drawable/ic_menu_upload" />
+        <Space android:layout_width="16dp" android:layout_height="1dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnShelfUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Shelf +"
+            android:src="@android:drawable/ic_menu_add" />
+        <Space android:layout_width="12dp" android:layout_height="1dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnShelfDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Shelf -"
+            android:src="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+</FrameLayout>
